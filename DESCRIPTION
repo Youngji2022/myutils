@@ -1,0 +1,15 @@
+Package: myutils
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.2
+Authors@R: 
+    c(person(given = "Youngji",
+             family = "Jo",
+             role = c("aut", "cre"),
+             email = "youngji1435@gmail.com",
+             comment = c(ORCID = "0000-0002-1440-2786")))
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
