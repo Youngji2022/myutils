@@ -8,10 +8,13 @@ Authors@R:
              role = c("aut", "cre"),
              email = "youngji1435@gmail.com",
              comment = c(ORCID = "0000-0002-1440-2786")))
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: A set of summary-like utilities for various types of data.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/Youngji2022/myutils
 BugReports: https://github.com/Youngji2022/myutils/issues
+RoxygenNote: 7.2.0
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
