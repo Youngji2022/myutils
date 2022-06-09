@@ -25,6 +25,8 @@ numeric_summary(1:5)
 
 To view more example execute
 ```{r}
+library(myutils)
 browseVignettes("myutils")
+#>No vignettes by browseVignettes("myutils")
 ```
 
