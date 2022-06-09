@@ -5,6 +5,7 @@
 #'
 #' @param x a numeric vector
 #' @param na.rm an optional logical parameter. TRUE by default.
+#' @param verbose is TRUE for verbose output
 #'
 #' @return A named vector with six values.
 #' @export
@@ -14,7 +15,13 @@
 #' numeric_summary(x)
 
 
-numeric_summary <- function(x, na.rm=TRUE){
+numeric_summary <- function(x, na.rm=TRUE, verbose=FALSE){
+
+
+  if (!is.numeric(x)) stop("x must be a numeric vector")
+
+  if (verbose)message ("Opening database")
+  #print( "See documentation in here")
 
   min = min(x, na.rm=na.rm)
   max = max(x, na.rm=na.rm)
