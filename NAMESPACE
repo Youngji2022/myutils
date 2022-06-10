@@ -2,3 +2,5 @@
 
 export(char_summary)
 export(numeric_summary)
+import("(\"ggplot2\")")
+importFrom("(\"stats\",","\"rnorm\")")

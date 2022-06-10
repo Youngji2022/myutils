@@ -9,6 +9,8 @@
 #'
 #' @return A named vector with six values.
 #' @export
+#' @import("ggplot2")
+#' @importFrom("stats", "rnorm")
 #'
 #' @examples
 #' x <- c(4,7,8)
@@ -22,6 +24,9 @@ numeric_summary <- function(x, na.rm=TRUE, verbose=FALSE){
 
   if (verbose)message ("Opening database")
   #print( "See documentation in here")
+
+  d<-data.frame (i = 1:10, b=stats::rnorm(10))
+  ggplot(d, aes(i,b)) + geom_line()
 
   min = min(x, na.rm=na.rm)
   max = max(x, na.rm=na.rm)
